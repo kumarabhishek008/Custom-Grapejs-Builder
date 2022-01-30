@@ -1,5 +1,4 @@
 import React from 'react';
-import PageBuilder from '../PageBuilder';
 import GrapesjsMain from '../../components/GrapesjsMain';
 // import './style.scss';
 
