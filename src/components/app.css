@@ -53,3 +53,12 @@
   .panel__devices {
     position: initial;
   }
+  .fa-desktop {
+    content: url('./icons/screen.svg');
+  }
+  .fa-tablet {
+    content: url('./icons/tab.svg');
+  }
+  .fa-mobile {
+    content: url('./icons/smartphone.svg');
+  }

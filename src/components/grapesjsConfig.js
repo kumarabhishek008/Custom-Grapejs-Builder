@@ -90,23 +90,24 @@ const GrapesjsConfig = () => {
         {
           id: 'panel-devices',
           el: '.panel__devices',
-          buttons: [{
+          buttons: [
+            {
               id: 'device-desktop',
-              label: 'D',
               command: 'set-device-desktop',
+              className  : "fa-desktop",
               active: true,
               togglable: false,
             }, 
             {
-              id: 'device-mobile',
-              label: 'M',
-              command: 'set-device-mobile',
-              togglable: false,
-          },
-            {
               id: 'device-tablet',
-              label: 'T',
+              className  : "fa-tablet",
               command: 'set-device-tablet',
+              togglable: false,
+            },
+            {
+              id: 'device-mobile',
+              className  : "fa-mobile",
+              command: 'set-device-mobile',
               togglable: false,
           },
         ],
