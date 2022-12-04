@@ -1,0 +1,100 @@
+@import 'variables';
+//Sizing
+
+@each $width in $widths{
+    .grp-width-#{$width} {
+        width: calc(#{$width}* 1%);
+    }
+    .grp-height-#{$width} {
+        height: calc(#{$width}* 1%);
+    }
+}
+
+@each $breakpoint,$value in $breakpoints{
+    @each $width in $widths{
+        @media (min-width: $value) {
+            .grp-width-#{$breakpoint}-#{$width} {
+                width : calc(#{$width}*  1%);
+            }
+            .grp-height-#{$breakpoint}-#{$width} {
+                height : calc(#{$width}*  1%);
+            }
+        }
+    }
+}
+
+.grp-wrapper{
+    width: 100%;
+}
+
+@each $breakpoint,$value in $breakpoints{
+    @media (min-width: $value) {
+        .grp-container-#{$breakpoint} {
+            width: 90%;
+            max-width : map-get($containerWidths, $breakpoint) 
+        }
+    }
+}
+
+.grp-width-fit-content{
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+@each $fontweights in $fontWeights{
+    .grp-fontWeight-#{$fontweights} {
+        font-weight: #{$fontweights};
+    }
+}
+
+@each $fontSize,$value in $spaceamounts{
+    .grp-fontSize-#{$fontSize} {
+        font-size: #{$value}rem;
+    }
+}
+
+@each $breakpoint,$value in $breakpoints{
+    @each $fontSize,$value1 in $spaceamounts{
+        @media (max-width: 576px) {
+            .grp-fontSize-#{$fontSize} {
+                font-size: calc(#{$value1}* 0.6rem);
+            }
+        }
+    }
+}
+
+.grp-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@each $col-width in $col-width{
+    .grp-col-lg-#{$col-width}{
+        width: calc((100%/12)*#{$col-width});
+    }
+    .grp-col-sm-#{$col-width}{
+        width: calc((100%/12)*#{$col-width});
+    }  
+}
+
+@media (max-width:992px){
+    @each $col-width in $col-width{
+        .grp-col-sm-#{$col-width}{
+            width: 100%;
+        }
+        .grp-col-md-#{$col-width}{
+            width: calc((100%/12)*#{$col-width});
+        }
+    }
+}
+@media (max-width:576px){
+    @each $col-width in $col-width{
+        .grp-col-sm-#{$col-width}{
+            width: 100%;
+        }
+        .grp-col-xs-#{$col-width}{
+            width: calc((100%/12)*#{$col-width});
+        }
+    }
+}

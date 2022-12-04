@@ -1,0 +1,148 @@
+
+@import 'variables';
+.grp-m-auto{
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
+  margin-top: $margin-auto;
+  margin-bottom:$margin-auto;
+}
+
+.grp-mx-auto{
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
+  margin-top:$margin-0;
+  margin-bottom: $margin-0;
+}
+
+.grp-my-auto{
+  margin-top: $margin-auto;
+  margin-bottom:$margin-auto;
+}
+
+@each $space, $value in $spaceamounts {
+    @each $side in $sides {
+      .grp-m#{str-slice($side, 0, 1)}-#{$space} {
+        margin-#{$side}: #{$value}rem;
+      }
+    
+      .grp-p#{str-slice($side, 0, 1)}-#{$space} {
+        padding-#{$side}: #{$value}rem;
+      }
+    }
+
+    .grp-mx-#{$space} {
+      margin-left: #{$value}rem;
+      margin-right: #{$value}rem;
+    }
+
+    .grp-my-#{$space}{
+      margin-top: #{$value}rem;
+      margin-bottom: #{$value}rem;
+    }
+
+    .grp-py-#{$space} {
+      padding-top: #{$value}rem;
+      padding-bottom: #{$value}rem;
+    }
+
+    .grp-px-#{$space}{
+      padding-left: #{$value}rem;
+      padding-right: #{$value}rem;
+    }
+    .grp-font-size-#{$space}{
+      font-size: #{$value}rem;
+    }
+    .grp-top-#{$space}{
+      top: #{$value}rem;
+    }
+    .grp-left-#{$space}{
+      left: #{$value}rem;
+    }
+    .grp-height-px-#{$space}{
+      height: #{$value}rem;
+    }
+    .grp-width-px-#{$space}{
+      width: #{$value}rem;
+    }
+    .grp-border-radius-#{$space}{
+      border-radius: #{$value}rem;
+    }
+  }
+
+  @each $space, $value in $positions {
+    .grp-position-#{$space}{
+      position: #{$value};
+    }
+  }
+
+  @each $key, $value in $flexDirection {
+    .grp-flex-#{$key}{
+      flex-direction: #{$value};
+    }
+  }
+
+
+$breakpoints: ("xs":$xs,"sm": $sm,"md":$md , "lg":$lg, "xl":$xl, "xxl":$xxl);
+@each $breakpoint in map-keys($breakpoints){
+  @media (min-width: (map-get($breakpoints,$breakpoint))) {
+    @each $space,$value in $spaceamounts {
+      @each $side in $sides {
+        .grp-m#{str-slice($side, 0, 1)}-#{$breakpoint}-#{$space} {
+          margin-#{$side}: #{$value}rem;
+        }
+      
+        .grp-p#{str-slice($side, 0, 1)}-#{$breakpoint}-#{$space} {
+          padding-#{$side}: #{$value}rem;
+        }
+      }
+      .grp-mx-#{$breakpoint}-#{$space} {
+        margin-left: #{$value}rem;
+        margin-right: #{$value}rem;
+      }
+  
+      .grp-px-#{$breakpoint}-#{$space}{
+        padding-left: #{$value}rem;
+        padding-right: #{$value}rem;
+      }
+  
+      .grp-my-#{$breakpoint}-#{$space} {
+        margin-top: #{$value}rem;
+        margin-bottom: #{$value}rem;
+      }
+      .grp-py-#{$breakpoint}-#{$space}{
+        padding-top: #{$value}rem;
+        padding-bottom: #{$value}rem;
+      }
+      @each $borderColor, $color in $colors {
+        .grp-border-color-#{$breakpoint}-#{$borderColor} {
+          border-color: $color;
+        }
+        .grp-text-color-#{$breakpoint}-#{$borderColor} {
+          color: $color;
+        }
+        .grp-background-color-#{$breakpoint}-#{$borderColor} {
+          background-color: $color;
+        }
+      }
+      @each $key, $value in $flexDirection {
+        .grp-flex-#{$breakpoint}-#{$key}{
+          flex-direction: #{$value};
+        }
+      }
+      @each $name, $justifyProps in $justifyProps {
+        .grp-justify-content-#{$breakpoint}-#{$name} {
+          justify-content: #{$justifyProps};
+        }
+      }
+      
+      @each $name, $alignItems in $alignItems {
+        .grp-align-items-#{$breakpoint}-#{$name} {
+          align-items: #{$alignItems};
+        }
+      }
+    }
+  }
+}
+
+
+

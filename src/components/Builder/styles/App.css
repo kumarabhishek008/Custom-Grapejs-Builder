@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  /* overflow: hidden; */
+}
+/* Let's highlight canvas boundaries */
+#gjs {
+  /* border: 1px solid rgb(95 95 95 / 37%); */
+  padding: 0.5rem;
+}
+
+.gjs-field-integer input {
+  padding-right: 30px;
+  max-height: 28px;
+}
+
+.gjs-field input, .gjs-field select, .gjs-field textarea{
+  max-height: 28px;
+}
+
+/* Reset some default styling */
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* .gjs-block {
+  width: auto;
+  height: auto;
+  min-height: auto;
+}
+.gjs-block {
+  width: auto;
+  height: auto;
+  min-height: auto;
+} */
+.panel__top {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  position: initial;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: #666666;
+  box-shadow: 0px 12px 10px -15px #bdbdbd;
+  position: relative;
+  z-index: 1000;
+  /* border-bottom: 1px solid #666666; */
+}
+.gjs-two-color {
+  color: #666666;
+}
+.gjs-one-bg {
+  background-color: #fff;
+}
+.panel__basic-actions {
+  position: initial;
+}
+.editor-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 90vh;
+}
+
+.editor-canvas {
+  flex-grow: 1;
+}
+
+.panel__right {
+  width: 15%;
+  position: relative;
+  overflow-y: scroll;
+  animation: slideright;
+  box-shadow: 0px 0px 14px 1px #bdbdbd;
+  z-index: 100;
+  animation-duration: 500ms;
+}
+.panel__right::-webkit-scrollbar {
+  display: none;
+}
+.panel__switcher {
+  position: initial;
+}
+#blocks {
+  width: 15%;
+  overflow-y: scroll;
+  box-shadow: 6px 0px 10px #e4e4e4;
+  z-index: 100;
+  border-radius: 4px;
+}
+div#blocks::-webkit-scrollbar {
+  display: none;
+}
+.gjs-block-label img {
+  width: 100%;
+}
+.gjs-block{
+    min-width: 45%;
+    box-shadow: 0px 0px 10px -3px #bdbdbd !important;
+    border: none;
+}
+
+.gjs-mdl-dialog{
+  margin-top: 5rem;
+}
+
+.gjs-am-add-asset button{
+  width: auto !important;
+  background-color: #367BEE;
+  color: white !important;
+}
+
+.gjs-title{
+  background-color: white !important;
+  padding: 16px 10px 16px 20px !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid #eef3f5 !important;
+}
+.gjs-three-bg {
+  background-color: white;
+}
+.close-icon{
+  padding: 0.5rem;
+}
+.panel-action .MuiButton-containedPrimary {
+  color: #000;
+  background-color: #3f51b500;
+  border: 1px solid black;
+}
+.gjs-sm-title{
+  font-weight: 600 !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid #eef3f5 !important;
+}
+.gjs-layer-title{
+  border-bottom: 2px solid #eef3f5 !important;
+}
+.gjs-field{
+  background-color: #bdbdbd;
+}
+.gjs-blocks-c{
+  padding: 0.5rem;
+}
+
+.gjs-am-file-uploader{
+  width: 50%;
+}
+.gjs-am-assets-cont{
+  width: 50%;
+  height: 304px;
+}
+.gjs-am-assets-header form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+
+  padding: 8px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.btn-primary{
+  background-color: #367bee;
+  border: 1px solid #367BEE;
+  color: white;
+  transition: 500ms;
+}
+
+.btn:hover{
+  transition: 500ms;
+  transform: translate(0px, -2px);
+  background-color: #2563cf;
+}
+
+.panel__switcher{
+  display: flex;
+  align-items: center;
+}
+.go_back{
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.selectIcon{
+  content: url('./icons/send-1.svg');
+}
+.screenWindow{
+  content: url('./icons/screen.svg');
+}
+.mobilewindow{
+  content: url('./icons/smartphone.svg');
+}
+.tabWindow{
+  content: url('./icons/tab.svg');
+}
+.undo{
+  content: url('./icons/rotate-left.svg');
+}
+.redo{
+  content: url('./icons/rotate-right.svg');
+}
+.image{
+  content: url('./icons/image-1.svg');
+}
+.trash{
+  content: url('./icons/trash-2.svg');
+}
+.editor{
+  content: url('./icons/edit-4.svg');
+}
+.export{
+  content: url('./icons/download.svg');
+}
+.crossCircle{
+  content: url('./icons/cross-circle.svg');
+}
+
+@keyframes slideright {
+  0% {right: -250px;}
+  100% {
+    right: 0px;
+  }
+}
+
+

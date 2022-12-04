@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "override.css",
+	"sources": [
+		"../scss/override.scss",
+		"../scss/abstracts/variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,sCAAsC;AACtC,AAAA,WAAW,CAAC;EACR,gBAAgB,ECmMF,OAAO,GDlMtB;;AAED,wCAAwC;AACxC,AAAA,cAAc,CAAC;EACb,KAAK,ECgMQ,OAAO,GD/LrB;;AAED,uCAAuC;AACvC,AAAA,aAAa,CAAC;EACZ,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,KAAK,GACb;;AAED,yCAAyC;AACzC,AAAA,eAAe;AACf,iBAAiB,AAAA,MAAM,CAAC;EACtB,KAAK,EAAE,OAAO,GACf;;AAED,AAAA,iBAAiB,CAAC;EAChB,KAAK,EAAE,OAAO,GACf"
+}

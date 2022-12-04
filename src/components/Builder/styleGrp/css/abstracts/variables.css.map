@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../../scss/abstracts/variables.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

@@ -1,11 +1,10 @@
 import React from 'react';
-import GrapesjsMain from '../../components/GrapesjsMain';
-// import './style.scss';
+import Pagebuilder from '../PageBuilder';
 
 const AppContainer = (props) => {
     return (
         <div>
-            <GrapesjsMain {...props}/>
+            <Pagebuilder {...props}/>
         </div>
     )
 }

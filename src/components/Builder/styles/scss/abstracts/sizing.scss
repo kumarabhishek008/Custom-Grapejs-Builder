@@ -1,0 +1,71 @@
+@import 'variables';
+//Sizing
+
+@each $width in $widths{
+    .gr-width-#{$width} {
+        width: calc(#{$width}* 1%);
+    }
+    .gr-height-#{$width} {
+        height: calc(#{$width}* 1%);
+    }
+}
+
+@each $breakpoint,$value in $breakpoints{
+    @each $width in $widths{
+        @media (min-width: $value) {
+            .gr-width-#{$breakpoint}-#{$width} {
+                width : calc(#{$width}*  1%);
+            }
+            .gr-height-#{$breakpoint}-#{$width} {
+                height : calc(#{$width}*  1%);
+            }
+        }
+    }
+}
+
+.gr-wrapper{
+    width: 100%;
+}
+
+.gr-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.gr-container-full {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@each $breakpoint,$value in $breakpoints{
+    @media (min-width: $value) {
+        .gr-container-#{$breakpoint} {
+            max-width : map-get($containerWidths, $breakpoint) 
+        }
+    }
+}
+
+.gr-width-fit-content{
+    width: fit-content;
+}
+
+@each $fontweights in $fontWeights{
+    .gr-fontWeight-#{$fontweights} {
+        font-weight: #{$fontweights};
+    }
+}
+
+@each $fontSize,$value in $spaceamounts{
+    .gr-fontSize-#{$fontSize} {
+        font-size: #{$value}rem;
+    }
+}
+@each $breakpoint,$value in $breakpoints{
+    @each $fontSize,$value1 in $spaceamounts{
+        @media (max-width: 780px) {
+            .gr-fontSize-#{$fontSize} {
+                font-size: calc(#{$value1}* 0.6rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,240 @@
+$col-width: (1,2,3,4,5,6,7,8,9,10,11,12);
+$widths: (10, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100,105,110,115,120,125,130,135,140,145,150);
+$margin-auto: auto;
+$margin-0: 0;
+$spaceamounts: (
+  'm10': -10,
+  'm9': -9,
+  'm8': -8,
+  'm7': -7,
+  'm6': -6,
+  'm5': -5,
+  'm4': -4,
+  'm3': -3,
+  'm2': -2,
+  'm1': -1,
+  '0': 0,
+  '1': 0.063,
+  '2': 0.125,
+  '4': 0.25,
+  '8': 0.5,
+  '10': 0.625,
+  '12': 0.75,
+  '14': 0.875,
+  '16': 1,
+  '18': 1.125,
+  '20': 1.25,
+  '24': 1.5,
+  '28': 1.75,
+  '32': 2,
+  '36': 2.25,
+  '40': 2.5,
+  '48': 3,
+  '56': 3.5,
+  '64': 4,
+  '72': 4.5,
+  '100': 6.25,
+  '112': 7,
+  '120': 7.5,
+  '124': 8,
+  '136': 8.5,
+  '144': 9,
+  '152': 9.5,
+  '160': 10,
+  '168': 10.5,
+  '176': 11,
+  '184': 11.5,
+  '192': 12,
+  '200': 12.5,
+); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right);
+$primary: #2a3d66;
+$primary_2: #363636;
+$secondary: #5d54a4;
+$tertiary: #9d65c9;
+$black: #000000;
+$white: #ffffff;
+$gray0: #313135;
+$gray1: #333333;
+$gray2: #4f4f4f;
+$gray3: #828282;
+$gray4: #bdbdbd;
+$gray5: #e0e0e0;
+$gray6: #f2f2f2;
+$gray7: #f7f9fe;
+$gray8:  #E5E5E5;
+$gray: #ffffff;
+$danger: #ff0000;
+$red1: #f87789;
+$orange: #fa4616;
+$orange1: #ff9655;
+$success: green;
+$darkGreen_1: #02556d;
+$lightGreen_1: #30c8d6;
+$lightGreen_2: #27AE60;
+$navyblue: #0c94e5;
+$uipathBlue: #d6f5ff;
+$transparent: transparent;
+$roseWhite: #faf3f0;
+$purple: #8c30f5;
+$purple1: #b888f8;
+$blue1: #6ecac9;
+$blue2: #367bee;
+$rosePink: #ead8ff;
+$green1: #6fcf97;
+$blue3: #689ef9;
+$blue4: #00348a;
+$blue5: #c5d8f6;
+$blue6:#F9FAFB;
+$blue7: #4892f5;
+$green_1:#8DC558;
+$darkblue:#0C2577;
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'tertiary': $tertiary,
+  'white': $white,
+  'black': $black,
+  'gray0': $gray0,
+  'gray1': $gray1,
+  'gray2': $gray2,
+  'gray3': $gray3,
+  'gray4': $gray4,
+  'gray5': $gray5,
+  'gray6': $gray6,
+  'gray7': $gray7,
+  'gray8': $gray8,
+  'danger': $danger,
+  'success': $success,
+  'navyblue': $navyblue,
+  'orange': $orange,
+  'uipathblue': $uipathBlue,
+  'primary_2': $primary_2,
+  'roseWhite': $roseWhite,
+  'darkGreen_1': $darkGreen_1,
+  'lightGreen_1': $lightGreen_1,
+  'lightGreen_2': $lightGreen_2,
+  'purple': $purple,
+  'purple1': $purple1,
+  'orange1': $orange1,
+  'red1': $red1,
+  'blue1': $blue1,
+  'rosePink': $rosePink,
+  'blue2': $blue2,
+  'blue3': $blue3,
+  'green1': $green1,
+  'blue4': $blue4,
+  'blue6': $blue6,
+  'blue7': $blue7,
+  'green_1':$green_1,
+  'darkblue':$darkblue,
+);
+$borderRadius: (
+  'circle': 50%,
+  'rounded': 1%,
+  'none': 0,
+);
+// Small devices (landscape phones, 576px and up)
+// Medium devices (tablets, 768px and up)
+// Large devices (desktops, 992px and up)
+// Extra large devices (large desktops, 1200px and up)
+$xs: 375px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1260px;
+$xxl:1400px;
+$breakpoints: (
+  'xs': $xs,
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+  'xl': $xl,
+  'xxl':$xxl,
+);
+$containerWidths: (
+  'xs': 375px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl':1400px,
+);
+$positions: ('static', 'relative', 'absolute', 'fixed', 'sticky');
+$displayProps: (
+  'none',
+  'inline',
+  'inline-block',
+  'block',
+  'table',
+  'table-cell',
+  'table-row',
+  'flex',
+  'inline-flex'
+);
+$textAlignments: ('left', 'right', 'center', 'justify','end');
+$textTransforms: ('lowercase', 'uppercase', 'capitalize');
+$fontWeights: (100, 200, 300, 400, 500, 600, 700);
+$font-family: 'Rubik';
+
+$size-h1: 64px;
+$line-height-h1: 76px;
+
+$size-h2: 48px;
+$line-height-h2: 57px;
+
+$size-h3: 36px;
+$line-height-h3: 43px;
+
+$size-h4: 24px;
+$line-height-h4: 28px;
+
+$size-p: 16px;
+$line-height-p: 24px;
+
+$size-body1: 14px;
+$line-height-body1: 24px;
+
+//for tool only
+
+$backgroundColor: #fbfbfb;
+$iconColor: #626262;
+$blockTextColor: #494949;
+
+$positions: (
+  'absolute': absolute,
+  'relative': relative,
+  'fixed': fixed,
+  'sticky': sticky,
+);
+
+$justifyProps: (
+  'center': center,
+  'between': space-between,
+  'evenly': space-evenly,
+  'start': flex-start,
+  'end': flex-end,
+);
+
+$alignItems: (
+  'baseline': baseline,
+  'center' : center,
+  'left'   : left,
+  'right'  : right,
+  'start'  : flex-start,
+  'end'    : flex-end,
+  'stretch': stretch,
+);
+
+$flexDirection : (
+  'column':column,
+  'row' : row,
+  'column-reverse':column-reverse,
+  'row-reverse':row-reverse,
+  'inherit':inherit,
+  'unset':unset
+);
+
+$angle : (30,45,60,90,120,135,150,180);
+
+$font-family:('Lexend','Manrope','Rubik','Open-sans','Nunito','Ariel');

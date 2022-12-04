@@ -1,0 +1,107 @@
+
+@import 'variables';
+.gr-m-auto{
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
+  margin-top: $margin-auto;
+  margin-bottom:$margin-auto;
+}
+
+.gr-mx-auto{
+  margin-left: $margin-auto;
+  margin-right: $margin-auto;
+  margin-top:$margin-0;
+  margin-bottom: $margin-0;
+}
+
+.gr-my-auto{
+  margin-top: $margin-auto;
+  margin-bottom:$margin-auto;
+}
+
+@each $space, $value in $spaceamounts {
+    @each $side in $sides {
+      .gr-m#{str-slice($side, 0, 1)}-#{$space} {
+        margin-#{$side}: #{$value}rem;
+      }
+    
+      .gr-p#{str-slice($side, 0, 1)}-#{$space} {
+        padding-#{$side}: #{$value}rem;
+      }
+    }
+
+    .gr-mx-#{$space} {
+      margin-left: #{$value}rem;
+      margin-right: #{$value}rem;
+    }
+
+    .gr-my-#{$space}{
+      margin-top: #{$value}rem;
+      margin-bottom: #{$value}rem;
+    }
+
+    .gr-py-#{$space} {
+      padding-top: #{$value}rem;
+      padding-bottom: #{$value}rem;
+    }
+
+    .gr-px-#{$space}{
+      padding-left: #{$value}rem;
+      padding-right: #{$value}rem;
+    }
+    .gr-font-size-#{$space}{
+      font-size: #{$value}rem;
+    }
+    .gr-top-#{$space}{
+      top: #{$value}rem;
+    }
+    .gr-left-#{$space}{
+      left: #{$value}rem;
+    }
+  }
+
+  @each $space, $value in $positions {
+    .gr-position-#{$space}{
+      position: #{$value};
+    }
+  }
+
+
+$breakpoints: ("sm": $sm,"md":$md , "lg":$lg ,"xl":$xl);
+@each $breakpoint in map-keys($breakpoints){
+  @media (min-width: (map-get($breakpoints,$breakpoint))) {
+    @each $space,$value in $spaceamounts {
+      @each $side in $sides {
+        .gr-m#{str-slice($side, 0, 1)}-#{$breakpoint}-#{$space} {
+          margin-#{$side}: #{$value}rem;
+        }
+      
+        .gr-p#{str-slice($side, 0, 1)}-#{$breakpoint}-#{$space} {
+          padding-#{$side}: #{$value}rem;
+        }
+      }
+      .gr-mx-#{$breakpoint}-#{$space} {
+        margin-left: #{$value}rem;
+        margin-right: #{$value}rem;
+      }
+  
+      .gr-px-#{$breakpoint}-#{$space}{
+        padding-left: #{$value}rem;
+        padding-right: #{$value}rem;
+      }
+  
+      .gr-py-#{$breakpoint}-#{$space} {
+        margin-top: #{$value}rem;
+        margin-bottom: #{$value}rem;
+      }
+  
+      .gr-my-#{$breakpoint}-#{$space}{
+        padding-top: #{$value}rem;
+        padding-bottom: #{$value}rem;
+      }
+    }
+  }
+}
+
+
+

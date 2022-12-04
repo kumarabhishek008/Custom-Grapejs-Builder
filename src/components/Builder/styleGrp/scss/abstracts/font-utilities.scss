@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
+@import 'variables';
+
+body {
+  font-family: Lexend, sans-serif;
+  font-weight: lighter;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  font-weight: light;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-weight: light;
+}
+
+::placeholder {
+  font-weight: light;
+}
+
+//border
+.grp-border {
+  border: 1px solid #dee2e6;
+}
+
+@each $side in $sides {
+  .grp-border-#{$side} {
+    border-#{$side}: 1px solid #dee2e6;
+  }
+}
+
+@each $borderColor, $color in $colors {
+  .grp-border-color-#{$borderColor} {
+    border-color: $color;
+  }
+  .grp-text-color-#{$borderColor} {
+    color: $color;
+  }
+  .grp-background-color-#{$borderColor} {
+    background-color: $color;
+  }
+}
+
+@each $shape, $radius in $borderRadius {
+  .grp-border-#{$shape} {
+    border-radius: #{$radius};
+  }
+}
+
+// positions
+
+@each $position in $positions {
+  .grp-position-#{$position} {
+    position: #{$position};
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+// text
+.grp-text-decoration-none {
+  text-decoration: none;
+}
+.grp-text-break {
+  word-wrap: break-word;
+}
+
+@each $textTransform in $textTransforms {
+  .grp-text-#{$textTransform} {
+    text-transform: #{$textTransform};
+  }
+}
+
+@each $value in $angle {
+  .grp-transform-#{$value} {
+    transform: rotate(#{$value}deg);
+  }
+}
+
+@each $fontWeight in $fontWeights {
+  .grp-font-weight-#{$fontWeight} {
+    font-weight: #{$fontWeight};
+  }
+}
+
+@each $value in $font-family {
+  .grp-font-family-#{$value}{
+    font-family: #{$value},'sans-serif';
+  }
+}
+
+@each $textAlignment in $textAlignments {
+  .grp-text-align-#{$textAlignment} {
+    text-align: #{$textAlignment};
+  }
+}
+
+//display props
+@each $displayProp in $displayProps {
+  .grp-display-#{$displayProp} {
+    display: #{$displayProp};
+  }
+}
+
+@each $name, $justifyProps in $justifyProps {
+  .grp-justify-content-#{$name} {
+    justify-content: #{$justifyProps};
+  }
+}
+
+@each $name, $alignItems in $alignItems {
+  .grp-align-items-#{$name} {
+    align-items: #{$alignItems};
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @each $displayProp in $displayProps {
+    @media (min-width: $value) {
+      .grp-display-#{$breakpoint}-#{$displayProp} {
+        display: #{$displayProp};
+      }
+    }
+  }
+}
+
+.grp-form-group{
+    padding-bottom : 1.5rem ;
+}
+
+@each $key, $value in $colors{
+    .grp-form-input-control-#{$key}{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 1px solid $gray3;
+        border-radius: 0.25rem;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        padding:0.75rem 0.75rem;
+        // max-height: 2.8125rem;
+        line-height: 1.5rem;
+        color: $gray2;
+        &:hover, &:focus, &:focus-visible, &:active{
+            border: 1px solid #{$value};
+            outline: unset;
+        }
+        &::placeholder{
+            color:$gray4;
+            font-weight:normal;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "grapesjs-blocks-bootstrap4-1",
+  "version": "0.1.24",
+  "description": "GrapesJS Bootstrap v4 Blocks Plugin",
+  "main": "dist/grapesjs-blocks-bootstrap4-1.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "build-ver": "npm run v:patch && webpack --env.production",
+    "build": "npm run && webpack --env.production",
+    "start": "webpack-dev-server --open --progress --colors",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaoz70/grapesjs-bootstrap4-blocks.git"
+  },
+  "keywords": [
+    "grapesjs",
+    "plugin",
+    "bootstrap"
+  ],
+  "author": "z1lk",
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "grapesjs": "0.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^4.0.0",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "npm": "^6.10.0",
+    "underscore": "^1.9.1",
+    "underscore.string": "^3.3.5"
+  }
+}

@@ -1,0 +1,425 @@
+.gr-h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  word-break: break-word; }
+
+.gr-h1-med {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  word-break: break-word; }
+
+.gr-h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  word-break: break-word; }
+
+.gr-h2-med {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  word-break: break-word; }
+
+.gr-h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  word-break: break-word; }
+
+.gr-h3-med {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  word-break: break-word; }
+
+.gr-h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word; }
+
+.gr-h4-med {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  word-break: break-word; }
+
+.gr-p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  word-break: break-word; }
+
+.gr-body1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  word-break: break-word; }
+
+.gr-button-primary {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #5d54a4;
+  border: solid 1px #5d54a4;
+  border-radius: 5px;
+  padding: 12px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr-button-primary:hover {
+    background-color: #9d65c9;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-primary:active {
+    background-color: #2a3d66;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-primary:disabled {
+    background-color: #e0e0e0; }
+
+.gr-button-secondary {
+  color: #5d54a4;
+  background-color: transparent;
+  border: 1px solid #5d54a4;
+  border-radius: 5px;
+  padding: 12px 60px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr-button-secondary:hover {
+    background-color: #5d54a4;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-secondary:active {
+    background-color: #2a3d66;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-secondary:disabled {
+    background-color: #e0e0e0; }
+
+.gr-button-tertiary {
+  color: #ffffff;
+  background-color: #9d65c9;
+  border: 1px solid #9d65c9;
+  border-radius: 5px;
+  padding: 12px 60px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr-button-tertiary:hover {
+    background-color: #9d65c9;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-tertiary:active {
+    background-color: #2a3d66;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-tertiary:disabled {
+    background-color: #e0e0e0; }
+
+.gr-button-navyblue {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #0c94e5;
+  border: solid 1px #0c94e5;
+  border-radius: 5px;
+  padding: 12px 60px;
+  transition: 500ms;
+  word-break: break-word; }
+
+.gr-button-navyblue:hover {
+  color: #0c94e5;
+  background-color: #ffffff;
+  text-decoration: none; }
+
+.gr-button-navyblue:active {
+  background-color: #0c94e5;
+  color: #ffffff;
+  text-decoration: none; }
+
+.gr-button-navyblue:disabled {
+  background-color: #e0e0e0; }
+
+.gr-small {
+  font-size: 80%; }
+
+.gr-font-medium {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  word-break: break-word; }
+
+.ui_path_button {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #fa4616;
+  border: solid 1px #fa4616;
+  border-radius: 0px;
+  padding: 12px 60px;
+  word-break: break-word;
+  transition: 500ms; }
+  .ui_path_button:hover {
+    color: #fa4616;
+    background-color: #ffffff;
+    text-decoration: none; }
+  .ui_path_button:active {
+    background-color: #fa4616;
+    text-decoration: none; }
+  .ui_path_button:disabled {
+    background-color: #fa4616; }
+
+.gr-uipath-font {
+  font-family: Inter, sans-serif; }
+
+.gr-dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.6rem; }
+
+.gr-button-danger {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #ff0000;
+  border: solid 1px #ff0000;
+  border-radius: 0px;
+  padding: 12px 0px;
+  word-break: normal;
+  transition: 500ms; }
+  .gr-button-danger:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-danger:active {
+    background-color: #ff0000;
+    color: #ffffff;
+    text-decoration: none; }
+  .gr-button-danger:disabled {
+    background-color: #ff0000; }
+
+.gr-default-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+  padding: 12px 30px;
+  word-break: normal;
+  transition: 500ms; }
+  .gr-default-button:hover {
+    text-decoration: none; }
+
+.gr-button-saas-primary {
+  color: #ffffff;
+  background-color: #8c30f5;
+  border: solid 1px #8c30f5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 5px;
+  padding: 12px 60px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr-button-saas-primary:hover {
+    background-color: #ffffff;
+    color: #8c30f5;
+    text-decoration: none; }
+  .gr-button-saas-primary:active {
+    color: #ffffff;
+    background-color: #8c30f5;
+    text-decoration: none; }
+  .gr-button-saas-primary:disabled {
+    background-color: #e0e0e0; }
+
+.gr_sass_theme_button {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #367bee;
+  border: solid 1px #367bee;
+  border-radius: 0px;
+  padding: 16px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr_sass_theme_button:hover {
+    color: #367bee;
+    background-color: #ffffff;
+    text-decoration: none; }
+  .gr_sass_theme_button:active {
+    color: #ffffff;
+    background-color: #367bee;
+    text-decoration: none; }
+  .gr_sass_theme_button:disabled {
+    background-color: #367bee; }
+
+.gr_sass_theme_button_1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 0px;
+  padding: 16px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr_sass_theme_button_1:hover {
+    color: #367bee;
+    background-color: #ffffff;
+    text-decoration: none; }
+  .gr_sass_theme_button_1:active {
+    color: #ffffff;
+    background-color: #367bee;
+    text-decoration: none; }
+  .gr_sass_theme_button_1:disabled {
+    background-color: #367bee; }
+
+.gr_sass_theme_button_2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #00348a;
+  border: solid 1px #00348a;
+  border-radius: 0px;
+  padding: 16px;
+  word-break: break-word;
+  transition: 500ms; }
+  .gr_sass_theme_button_2:hover {
+    color: #00348a;
+    background-color: #ffffff;
+    text-decoration: none; }
+  .gr_sass_theme_button_2:active {
+    color: #ffffff;
+    background-color: #00348a;
+    text-decoration: none; }
+  .gr_sass_theme_button_2:disabled {
+    background-color: #00348a; }
+
+@media (max-width: 576px) {
+  .gr-h1 {
+    font-size: 36px;
+    line-height: 43px; }
+  .gr-h1-med {
+    font-size: 36px;
+    line-height: 43px; }
+  .gr-p {
+    font-size: 12px;
+    line-height: 24px; }
+  .gr-button-primary {
+    font-size: 12px; }
+  .gr-button-secondary {
+    font-size: 12px; }
+  .gr-button-danger {
+    font-size: 12px; }
+  .gr-button-navyblue {
+    font-size: 12px; }
+  .gr-default-button {
+    font-size: 12px; }
+  .gr-button-tertiary {
+    font-size: 12px; }
+  .gr-button-saas-primary {
+    font-size: 12px; }
+  .gr_sass_theme_button {
+    font-size: 12px; }
+  .gr_sass_theme_button_1 {
+    font-size: 12px; }
+  .gr_sass_theme_button_2 {
+    font-size: 12px; }
+  .gr-h2 {
+    font-size: 28px;
+    line-height: 32px; }
+  .gr-h2-med {
+    font-size: 28px;
+    line-height: 32px; }
+  .gr-h3 {
+    font-size: 24px;
+    line-height: 24px; }
+  .gr-h3-med {
+    font-size: 24px;
+    line-height: 24px; }
+  .gr-h4 {
+    font-size: 18px;
+    line-height: 20px; }
+  .gr-h4-med {
+    font-size: 18px;
+    line-height: 20px; }
+  .gr-container-xl {
+    width: 300px; } }
+
+@media (max-width: 780px) {
+  .gr-h1 {
+    font-size: 36px;
+    line-height: 43px; }
+  .gr-h1-med {
+    font-size: 36px;
+    line-height: 43px; }
+  .gr-p {
+    font-size: 12px;
+    line-height: 24px; }
+  .gr-button-primary {
+    font-size: 12px; }
+  .gr-button-secondary {
+    font-size: 12px; }
+  .gr-button-danger {
+    font-size: 12px; }
+  .gr-button-navyblue {
+    font-size: 12px; }
+  .gr-default-button {
+    font-size: 12px; }
+  .gr-button-tertiary {
+    font-size: 12px; }
+  .gr-button-saas-primary {
+    font-size: 12px; }
+  .gr_sass_theme_button {
+    font-size: 12px; }
+  .gr_sass_theme_button_1 {
+    font-size: 12px; }
+  .gr-h2 {
+    font-size: 28px;
+    line-height: 32px; }
+  .gr-h2-med {
+    font-size: 28px;
+    line-height: 32px; }
+  .gr-h3 {
+    font-size: 24px;
+    line-height: 24px; }
+  .gr-h3-med {
+    font-size: 24px;
+    line-height: 24px; }
+  .gr-h4 {
+    font-size: 18px;
+    line-height: 20px; }
+  .gr-h4-med {
+    font-size: 18px;
+    line-height: 20px; } }
+
+/*# sourceMappingURL=typography.css.map */

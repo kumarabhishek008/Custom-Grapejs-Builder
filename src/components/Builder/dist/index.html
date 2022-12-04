@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GrapesJS Bootstrap v4 Blocks Plugin</title>
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <link href="https://rapidtech.s3.amazonaws.com/assets/framework.css" rel="stylesheet">
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="grapes.min.js"></script>
+    <script src="dist/grapesjs-blocks-bootstrap4.min.js"></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="gjs" style="height:0px; overflow:hidden">
+        <style>
+            body {
+                background-color: #f4ebf3;
+            }
+
+            header {
+                margin-top: 4rem;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            .h1,
+            .h2,
+            .h3,
+            .h4,
+            .h5,
+            .h6 {
+                color: #9f5497;
+            }
+
+            .jumbotron {
+                background-color: #d0bace;
+            }
+        </style>
+        <!--<div style="margin:100px 100px 25px; padding:25px; font:caption">
+      This is a demo content from index.html. For the development, you shouldn't edit this file, instead you can
+      copy and rename it to _index.html, on next server start the new file will be served, and it will be ignored by git.
+    </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <header class="header clearfix">
+                        <h1>GrapesJS Bootstrap v4 Blocks Plugin</h1>
+                    </header>
+                    <main role="main">
+                        <div class="jumbotron">
+                            <h1 class="display-4">Hello!</h1>
+                            <p class="lead">This is demo content from <code>index.html</code>. For development, you
+                                shouldn't edit this file. Instead, you can copy and rename it to
+                                <code>_index.html</code>. The next time the server starts, the new file will be served,
+                                and it will be ignored by git.</p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">
+                    <div>Col</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Settings</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel">Home</div>
+                        <div class="tab-pane" id="profile" role="tabpanel">Profile</div>
+                        <div class="tab-pane" id="messages" role="tabpanel">Messages</div>
+                        <div class="tab-pane" id="settings" role="tabpanel">Settings</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        var editor = grapesjs.init({
+            height: '100%',
+            showOffsets: 1,
+            noticeOnUnload: 0,
+            storageManager: { autoload: 0 },
+            container: '#gjs',
+            fromElement: true,
+            showDevices: false,
+            domComponents: {
+                wrapper: {
+                    stylable: [
+                        // Default attributes
+                        'background',
+                        'background-color',
+                        'background-image',
+                        'background-repeat',
+                        'background-attachment',
+                        'background-position',
+                        'background-size',
+                        'font-family',
+                        'font-size',
+                        'color',
+                    ]
+                }
+            },
+            styleManager: {
+                sectors: [{
+                    name: 'Appearence',
+                    open: false,
+                    // use buildProps to create built-in properties
+                    buildProps: ['background-image', 'background-color', 'background-size', 'background-repeat', 'background-position', 'font-family', 'color', 'font-size', 'font-weight', 'letter-spacing'],
+                    // flex-width doesn't actually exist, so extend it in properties via `id`
+                    properties: [{
+                        id: 'flex-width',
+                        type: 'integer',
+                        name: 'Width to req',
+                        units: ['px', '%'],
+                        property: 'flex-basis',
+                        // This will hide the property and will be shown only if some 
+                        // selected component would have something like: 
+                        // 'stylable-require': ['flex-basis']
+                        toRequire: 1,
+                    },
+                    ]
+                },
+                {
+                    name: 'Advanced',
+                    open: false,
+                    // use buildProps to create built-in properties
+                    buildProps: ['font-family', 'font-weight', 'line-height', 'text-transform', 'text-align', 'text-decoration', 'font-style', 'text-shadow'],
+                    // flex-width doesn't actually exist, so extend it in properties via `id`
+                    properties: [{
+                        name: 'Font',
+                        property: 'font-family',
+                        toRequire: 1,
+                    },
+                    {
+                        name: 'Weight',
+                        property: 'font-weight',
+                        id: 'font-weight',
+                        toRequire: 1,
+                    },
+                    {
+                        name: 'Text Transform',
+                        property: 'text-transform',
+                        defaults: 'none',
+                        type: 'select',
+                        list: [
+                            { value: 'none', name: 'None' },
+                            { value: 'capitalize', name: 'Capitalize' },
+                            { value: 'uppercase', name: 'UPPERCASE' },
+                            { value: 'lowercase', name: 'lowercase' }
+                        ]
+                    },
+                    {
+                        property: 'text-align',
+                        type: 'radio',
+                        defaults: 'left',
+                        list: [
+                            { value: 'left', name: 'Left', className: 'fa fa-align-left' },
+                            { value: 'center', name: 'Center', className: 'fa fa-align-center' },
+                            { value: 'right', name: 'Right', className: 'fa fa-align-right' },
+                            { value: 'justify', name: 'Justify', className: 'fa fa-align-justify' }
+                        ],
+                        toRequire: 1,
+                    }, {
+                        property: 'text-decoration',
+                        type: 'radio',
+                        defaults: 'none',
+                        toRequire: 1,
+                        list: [
+                            { value: 'none', name: 'None', className: 'fa fa-times' },
+                            { value: 'underline', name: 'underline', className: 'fa fa-underline' },
+                            { value: 'line-through', name: 'Line-through', className: 'fa fa-strikethrough' }
+                        ],
+                    },
+                    {
+                        name: 'Font Style',
+                        property: 'font-style',
+                        defaults: 'normal',
+                        type: 'select',
+                        toRequire: 1,
+                        list: [
+                            { value: 'normal', name: 'normal' },
+                            { value: 'italic', name: 'italic' },
+                            { value: 'oblique', name: 'oblique' },
+                        ]
+                    },
+                    {
+                        property: 'text-shadow',
+                        toRequire: 1,
+                        properties: [
+                            { name: 'X position', property: 'text-shadow-h' },
+                            { name: 'Y position', property: 'text-shadow-v' },
+                            { name: 'Blur', property: 'text-shadow-blur' },
+                            { name: 'Color', property: 'text-shadow-color' }
+                        ],
+                    }],
+                }],
+            },
+            plugins: ['grapesjs-blocks-bootstrap4'],
+            pluginsOpts: {
+                'grapesjs-blocks-bootstrap4': {
+                    blocks: {},
+                    blockCategories: {},
+                    labels: {},
+                    gridDevicesPanel: true,
+                    formPredefinedActions: [
+                        { name: 'Contact', value: '/contact' },
+                        { name: 'landing', value: '/landing' },
+                    ]
+                }
+            },
+            canvas: {
+                styles: [
+                    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+                    'https://rapidtech.s3.amazonaws.com/assets/framework.css'
+                ],
+                scripts: [
+                    'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+                    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+                    'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+                ],
+            }
+        });
+        window.editor = editor;
+        const tm = editor.TraitManager;
+        tm.addType('color-select', {
+            getInputEl: function () {
+                if (!this.inputEl) {
+                    console.log(this);
+                    console.log(this.target);
+                    console.log(this.target.view.el)
+                    console.log(this.model);
+                    const model = this.model;
+                    const value = this.getModelValue();
+                    console.log(value);
+                    console.log(this.config.em);
+                    console.log(this.ppfx);
+                    this.inputEl = editor.TraitManager.getType('color').prototype.getInputEl.bind(this)();
+                    console.log(this.inputEl);
+                    console.log(this.inputEl);
+                }
+                return this.inputEl;
+            }
+        });
+    </script>
+<script type="text/javascript" src="grapesjs-blocks-bootstrap4.min.js"></script></body>
+
+</html>

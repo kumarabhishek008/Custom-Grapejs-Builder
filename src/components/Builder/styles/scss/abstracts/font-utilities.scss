@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap);
+@import 'variables';
+
+.gr-form-input-control{
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding:12px 22px;
+    max-height: 45px;
+    &::placeholder{
+        height: 43px;
+        color:$gray4;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: lighter;
+    }
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+::-webkit-input-placeholder { /* Edge */
+    font-weight: light;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: light;
+}
+  
+::placeholder {
+    font-weight: light;
+}
+
+
+//border
+.gr-border{
+    border: 1px solid #dee2e6;
+}
+
+@each $side in $sides {
+    .gr-border-#{$side} {
+      border-#{$side}: 1px solid #dee2e6;
+    }
+}
+
+@each $borderColor, $color in $colors{
+    .gr-border-color-#{$borderColor} {
+    border-color: $color
+    }
+    .gr-text-color-#{$borderColor} {
+        color: $color
+    }
+    .gr-background-color-#{$borderColor} {
+        background-color: $color
+    }
+}
+
+@each $shape, $radius in $borderRadius{
+    .gr-border-#{$shape} {
+        border-radius: #{$radius}
+    } 
+}
+
+
+// positions
+
+@each $position in $positions{
+    .gr-position-#{$position} {
+        position :#{$position}
+    }
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+// text
+.gr-text-decoration-none{
+    text-decoration: none;
+}
+.gr-text-break {
+    word-wrap: break-word;
+}
+
+@each $textTransform in $textTransforms{
+    .gr-text-#{$textTransform} {
+        text-transform :#{$textTransform}
+    }
+}
+
+
+@each $fontWeight in $fontWeights{
+    .gr-font-weight-#{$fontWeight} {
+        font-weight :#{$fontWeight}
+    }
+}
+
+
+@each $textAlignment in $textAlignments{
+    .gr-text-align-#{$textAlignment} {
+        text-align :#{$textAlignment}
+    }
+}
+
+//display props
+@each $displayProp in $displayProps{
+    .gr-display-#{$displayProp} {
+        display :#{$displayProp}
+    }
+}
+
+@each $name,$justifyProps in $justifyProps{
+    .gr-justify-content-#{$name} {
+        justify-content :#{$justifyProps};
+    }
+}
+
+@each $breakpoint,$value in $breakpoints{
+@each $displayProp in $displayProps{
+    @media (min-width: $value) {
+    .gr-display-#{$breakpoint}-#{$displayProp} {
+        display :#{$displayProp}
+    }
+}
+}
+}
+
+.gr-form-input-control-hNf{
+    border: 1px solid #E0E0E0;
+    border-radius: 0px;
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    padding:12px 22px;
+    height: 45px;
+    &::placeholder{
+        height: 43px;
+        color:$gray4;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: lighter;
+    }
+}
+
+.gr-mesh-form-control{
+    border: 1px solid $black;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 0.35rem 0.75rem;
+    max-height: 38px;
+    color:$gray3;
+    line-height: 24px;
+    &::placeholder{
+        height: 40px;
+        color:$gray4;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: lighter;
+    }
+    &:hover{
+        border: 1px solid $blue3;
+        border-radius: 0px;
+    }
+    &:active{
+        border: 1px solid $blue3;
+        border-radius: 0px;
+    }
+    &:focus{
+        border: 1px solid $blue3;
+        border-radius: 0px;
+        outline-style: unset;
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "bootstrapCustom.css",
+	"sources": [
+		"../scss/bootstrapCustom.scss"
+	],
+	"names": [],
+	"mappings": "AAKA,sCAAsC;AACtC,mDAAmD"
+}

@@ -1,0 +1,172 @@
+@import 'variables';
+
+.grp-h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size-h1;
+  line-height: $line-height-h1;
+  word-break: break-word;
+}
+
+.grp-h1-med {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $size-h1;
+  line-height: $line-height-h1;
+  word-break: break-word;
+}
+.grp-h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size-h2;
+  line-height: $line-height-h2;
+  word-break: break-word;
+}
+.grp-h2-med {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $size-h2;
+  line-height: $line-height-h2;
+  word-break: break-word;
+}
+.grp-h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size-h3;
+  line-height: $line-height-h3;
+  word-break: break-word;
+}
+.grp-h3-med {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $size-h3;
+  line-height: $line-height-h3;
+  word-break: break-word;
+}
+
+.grp-h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size-h4;
+  line-height: $line-height-h4;
+  word-break: break-word;
+}
+.grp-h4-med {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $size-h4;
+  line-height: $line-height-h4;
+  word-break: break-word;
+}
+.grp-p {
+  font-style: normal;
+  font-size: $size-p;
+  line-height: $line-height-p;
+  word-break: break-word;
+}
+
+.grp-body1 {
+  font-style: normal;
+  font-size: $size-body1;
+  line-height: $line-height-body1;
+  word-break: break-word;
+}
+
+.grp-small {
+  font-size: 80%;
+}
+
+.grp-font-medium {
+  font-style: normal;
+  font-weight: 300;
+  font-size: $size-p;
+  line-height: 28px;
+  word-break: break-word;
+}
+
+.grp-dot {
+  height: 5px;
+  width: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.6rem;
+}
+
+@each $key, $color in $colors{
+  .grp-button-primary-#{$key} {
+    font-size: 16px;
+    line-height: 19px;
+    background-color:#{$color};
+    color: $white;
+    border-radius: 4px;
+    word-break: normal;
+    text-align: center;
+    transition: 500ms;
+    &:hover {
+      text-decoration: none;
+      background-color: darken($color: $color, $amount: 10%);
+      color: white;
+      
+    }
+  }
+  .grp-link-hover-#{$key}:hover{
+      color: darken($color: $color, $amount: 10%);
+  }
+}
+
+@each $key, $color in $colors{
+  .grp-button-secondary-#{$key} {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color:#{$color};
+    background-color: $white;
+    border-radius: 4px;
+    word-break: normal;
+    text-align: center;
+    transition: 500ms;
+    &:hover {
+      text-decoration: none;
+      background-color : #{$color};
+      color: $white
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .grp-h1 {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .grp-h1-med {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .grp-h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .grp-h2-med {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .grp-h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .grp-h3-med {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .grp-h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .grp-h4-med {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
