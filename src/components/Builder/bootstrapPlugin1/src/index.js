@@ -201,7 +201,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4-1', (editor, opt
     'typography': true,
     'basic': true,
     'forms': true,
-    // 'StripPayment' : true,
+    'StripPayment' : true,
   };
 
   let options = { ...{
@@ -218,10 +218,10 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4-1', (editor, opt
   },  ...opts };
 
   // Add components
-  loadCommands(editor, options);
-  loadTraits(editor, options);
   loadComponents(editor, options);
-  loadDevices(editor, options);
-  loadCss(editor, options);
+  // loadCommands(editor, options);
+  // loadTraits(editor, options);
+  // loadDevices(editor, options);
+  // loadCss(editor, options);
   // loadPaymentMethod(editor,options);
 });

@@ -100,8 +100,8 @@ const WithGrapesjs = props => {
 
   /** handle close style container */
   const handleClose = () => {
-    const ele = window.editor.getSelected();
-    window.editor.selectToggle(ele);
+    const ele = window?.editor?.getSelected();
+    window.editor?.selectToggle(ele);
     setBuilder({...builder,panelRight:false})
   }
   
@@ -361,7 +361,7 @@ const WithGrapesjs = props => {
           <TuneOutlined style={{marginLeft:'1rem', cursor:"pointer"}} fontSize="medium" onClick={toggleDrawer}/>
         </div>
       </div>
-      <div class="editor-row">
+      <div class="editor-row ml-4">
         <div id="blocks" />
         <div class="editor-canvas">
           <div id="gjs" />

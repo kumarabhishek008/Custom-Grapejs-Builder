@@ -1,4 +1,5 @@
 import "grapesjs/dist/css/grapes.min.css";
+import { plugin1 } from "./Plugin";
 // import CodeEditor from '../dist/grapesjs-component-code-editor.min.js';
 // import exportCode from '../dist/grapesjs-export-plugin.min.js';
 
@@ -176,6 +177,7 @@ const WithGrapesjsConfig = dynamicConfiguration => {
           console.log(files)
           },
       },
+      plugins:[plugin1],
       // plugins: [...pluginName,CodeEditor,exportCode],
       // pluginsOpts: { ...pluginOpts,CodeEditor:{},exportCode:{} },
       colorPicker: { appendTo: "parent", offset: { top: 26, left: -180 } },
@@ -713,6 +715,7 @@ const WithGrapesjsConfig = dynamicConfiguration => {
           "https://fonts.googleapis.com/css2?family=Nunito:wght@200,300,400,500,600,700&display=swap",
         ],
         scripts: [
+          "https://cdn.tailwindcss.com",
           "https://code.jquery.com/jquery-3.4.1.slim.min.js",
           "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
           "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",

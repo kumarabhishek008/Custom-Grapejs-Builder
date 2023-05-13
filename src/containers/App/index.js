@@ -5,6 +5,7 @@ const AppContainer = (props) => {
     return (
         <div>
             <Pagebuilder {...props}/>
+            {/* <Routes/> */}
         </div>
     )
 }

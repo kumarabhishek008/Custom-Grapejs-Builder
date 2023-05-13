@@ -77,119 +77,119 @@ export default (editor, config = {}) => {
     }
   };
 
-  if (cats.media) {
-    if (blocks.image) {
-      ImageBlock(bm, c.labels.image);
-      Image(domc);
-    }
+  // if (cats.media) {
+  //   if (blocks.image) {
+  //     ImageBlock(bm, c.labels.image);
+  //     Image(domc);
+  //   }
 
-    if (blocks.video) {
-      Embed(domc);
-      VideoBlock(bm, c.labels.video);
-      Video(domc);
-    }
-  }
+  //   if (blocks.video) {
+  //     Embed(domc);
+  //     VideoBlock(bm, c.labels.video);
+  //     Video(domc);
+  //   }
+  // }
 
   // Rebuild the default component and add utility settings to it (border, bg, color, etc)
-  if (cats.basic) {
-    if (blocks.default) {
-      Default(domc);
-    }
+  // if (cats.basic) {
+  //   if (blocks.default) {
+  //     Default(domc);
+  //   }
 
-    // Rebuild the text component and add display utility setting
-    if (blocks.text) {
-      TextBlock(bm, c.labels.text);
-      Text(domc);
-    }
+  //   // Rebuild the text component and add display utility setting
+  //   if (blocks.text) {
+  //     TextBlock(bm, c.labels.text);
+  //     Text(domc);
+  //   }
 
-    // Rebuild the link component with settings for collapse-control
-    if (blocks.link) {
-      LinkBlock(bm, c.labels.link);
-      Link(editor);
-    }
+  //   // Rebuild the link component with settings for collapse-control
+  //   if (blocks.link) {
+  //     LinkBlock(bm, c.labels.link);
+  //     Link(editor);
+  //   }
 
-    // Basic
-    if (blocks.list) {
-      ListBlock(bm, c.labels.list)
-      List(domc);
-    }
+  //   // Basic
+  //   if (blocks.list) {
+  //     ListBlock(bm, c.labels.list)
+  //     List(domc);
+  //   }
 
-    /*if (blocks.description_list) {
-    }*/
+  //   /*if (blocks.description_list) {
+  //   }*/
 
-  }
+  // }
 
   // LAYOUT
-  if (cats.layout) {
-    if (blocks.container) {
-      ContainerBlock(bm, c.labels.container);
-      Container(domc);
-    }
-    if (blocks.row) {
-      RowBlock(bm, c.labels.row);
-      Row(domc);
-    }
+  // if (cats.layout) {
+  //   if (blocks.container) {
+  //     ContainerBlock(bm, c.labels.container);
+  //     Container(domc);
+  //   }
+  //   if (blocks.row) {
+  //     RowBlock(bm, c.labels.row);
+  //     Row(domc);
+  //   }
 
-    if (blocks.column) {
-      ColumnBlock(bm, c.labels.column);
-      Column(domc, editor);
+  //   if (blocks.column) {
+  //     ColumnBlock(bm, c.labels.column);
+  //     Column(domc, editor);
 
-      ColumnBreakBlock(bm, c.labels.column_break);
-      ColumnBreak(domc);
-    }
-    // Media object
-    if (blocks.media_object) {
-      MediaObjectBlock(bm, c.labels.media_object);
-      MediaObject(domc);
-    }
-  }
+  //     ColumnBreakBlock(bm, c.labels.column_break);
+  //     ColumnBreak(domc);
+  //   }
+  //   // Media object
+  //   if (blocks.media_object) {
+  //     MediaObjectBlock(bm, c.labels.media_object);
+  //     MediaObject(domc);
+  //   }
+  // }
 
   // Bootstrap COMPONENTS
-  if (cats.components) {
-    // Alert
-    if (blocks.alert) {
-      AlertBlock(bm, c.labels.alert);
-      Alert(domc);
-    }
+  // if (cats.components) {
+  //   // Alert
+  //   if (blocks.alert) {
+  //     AlertBlock(bm, c.labels.alert);
+  //     Alert(domc);
+  //   }
 
-    if (blocks.tabs) {
-      TabsBlock(bm, c);
-      TabsNavigation(domc, config);
-      Tab(domc, config);
-      TabsPanes(domc, config);
-      TabPane(domc, config);
-    }
+  //   if (blocks.tabs) {
+  //     TabsBlock(bm, c);
+  //     TabsNavigation(domc, config);
+  //     Tab(domc, config);
+  //     TabsPanes(domc, config);
+  //     TabPane(domc, config);
+  //   }
 
-    // Badge
-    if (blocks.badge) {
-      BadgeBlock(bm, c.labels.badge);
-      Badge(domc);
-    }
+  //   // Badge
+  //   if (blocks.badge) {
+  //     BadgeBlock(bm, c.labels.badge);
+  //     Badge(domc);
+  //   }
 
-    // Card
-    if (blocks.card) {
-      CardBlock(bm, c);
-      Card(domc, editor);
-    }
+  //   // Card
+  //   if (blocks.card) {
+  //     CardBlock(bm, c);
+  //     Card(domc, editor);
+  //   }
 
-    if (blocks.section) {
-      SectionBlock(bm, c);
-      Section(domc, editor);
-    }
+  //   if (blocks.section) {
+  //     SectionBlock(bm, c);
+  //     Section(domc, editor);
+  //   }
 
-    // Collapse
-    if (blocks.collapse) {
-      CollapseBlock(bm, c.labels.collapse);
-      Collapse(editor);
-    }
+  //   // Collapse
+  //   if (blocks.collapse) {
+  //     CollapseBlock(bm, c.labels.collapse);
+  //     Collapse(editor);
+  //   }
 
-    // Dropdown
-    if (blocks.dropdown) {
-      DropDownBlock(bm, c.labels.dropdown);
-      Dropdown(editor);
-    }
+  //   // Dropdown
+  //   if (blocks.dropdown) {
+  //     DropDownBlock(bm, c.labels.dropdown);
+  //     Dropdown(editor);
+  //   }
 
-  }
+  // }
 
   // TYPOGRAPHY
   if (cats.typography) {
@@ -203,64 +203,64 @@ export default (editor, config = {}) => {
     }
   }
 
-  if(cats.forms) {
-    if (blocks.form) {
-      FormBlock(bm, c.labels.form);
-      Form(domc, traits, config);
-    }
+  // if(cats.forms) {
+  //   if (blocks.form) {
+  //     FormBlock(bm, c.labels.form);
+  //     Form(domc, traits, config);
+  //   }
 
-    if (blocks.input) {
-      InputBlock(bm, c.labels.input);
-      Input(domc, traits, config);
+  //   if (blocks.input) {
+  //     InputBlock(bm, c.labels.input);
+  //     Input(domc, traits, config);
 
-      FileInputBlock(bm, c.labels.file_input);
-      FileInput(domc, traits, config);
-    }
+  //     FileInputBlock(bm, c.labels.file_input);
+  //     FileInput(domc, traits, config);
+  //   }
 
-    if (blocks.form_group_input) {
-      InputGroupBlock(bm, c.labels.form_group_input);
-      InputGroup(domc, traits, config);
-    }
+  //   if (blocks.form_group_input) {
+  //     InputGroupBlock(bm, c.labels.form_group_input);
+  //     InputGroup(domc, traits, config);
+  //   }
 
-    if (blocks.textarea) {
-      TextareaBlock(bm, c.labels.textarea);
-      Textarea(domc, traits, config);
-    }
+  //   if (blocks.textarea) {
+  //     TextareaBlock(bm, c.labels.textarea);
+  //     Textarea(domc, traits, config);
+  //   }
 
-    if (blocks.select) {
-      SelectBlock(bm, c.labels.select);
-      Select(editor, domc, traits, config);
-    }
+  //   if (blocks.select) {
+  //     SelectBlock(bm, c.labels.select);
+  //     Select(editor, domc, traits, config);
+  //   }
 
-    if (blocks.checkbox) {
-      CheckboxBlock(bm, c.labels.checkbox);
-      Checkbox(domc, traits, config);
-    }
+  //   if (blocks.checkbox) {
+  //     CheckboxBlock(bm, c.labels.checkbox);
+  //     Checkbox(domc, traits, config);
+  //   }
 
-    if (blocks.radio) {
-      RadioBlock(bm, c.labels.radio);
-      Radio(domc, traits, config);
-    }
+  //   if (blocks.radio) {
+  //     RadioBlock(bm, c.labels.radio);
+  //     Radio(domc, traits, config);
+  //   }
 
-    if (blocks.label) {
-      LabelBlock(bm, c.labels.label);
-      Label(domc, traits, config);
-    }
+  //   if (blocks.label) {
+  //     LabelBlock(bm, c.labels.label);
+  //     Label(domc, traits, config);
+  //   }
 
-    if (blocks.button) {
-      ButtonBlock(bm, c.labels.button);
-      Button(domc);
-    }
+  //   if (blocks.button) {
+  //     ButtonBlock(bm, c.labels.button);
+  //     Button(domc);
+  //   }
 
-    if (blocks.button_group) {
-      ButtonGroupBlock(bm, c.labels.button_group);
-      ButtonGroup(domc);
-    }
+  //   if (blocks.button_group) {
+  //     ButtonGroupBlock(bm, c.labels.button_group);
+  //     ButtonGroup(domc);
+  //   }
 
-    if (blocks.button_toolbar) {
-      ButtonToolbarBlock(bm, c.labels.button_toolbar, c);
-      ButtonToolbar(domc);
-    }
-  }
+  //   if (blocks.button_toolbar) {
+  //     ButtonToolbarBlock(bm, c.labels.button_toolbar, c);
+  //     ButtonToolbar(domc);
+  //   }
+  // }
 
 }
